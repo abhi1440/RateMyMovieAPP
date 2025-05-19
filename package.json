@@ -1,22 +1,17 @@
 {
-<<<<<<< HEAD
     "name": "my-movies",
     "version": "1.0.0",
-    "description": "",
     "type": "module",
     "main": "index.js",
     "scripts": {
-        "dev": "vite",
-        "fullstack": "concurrently \"npm run backend\" \"npm run frontend\"",
+        "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
         "backend": "nodemon backend/index.js",
         "frontend": "cd frontend && npm run dev",
         "build": "npm --prefix frontend run build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d frontend/dist"
+        "start": "node backend/index.js",
+        "deploy": "gh-pages -d frontend/dist",
+        "vercel-build": "npm run build"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "axios": "^1.9.0",
         "bcryptjs": "^2.4.3",
@@ -32,45 +27,9 @@
         "react-redux": "^9.2.0"
     },
     "devDependencies": {
-        "@vitejs/plugin-react": "^4.3.4",
-        "autoprefixer": "^10.4.20",
-        "gh-pages": "^6.3.0",
-        "postcss": "^8.5.1",
-        "tailwindcss": "^3.4.17",
-        "vite": "^6.0.7"
-=======
-    "name": "frontend",
-    "version": "1.0.0",
-    "main": "index.js",
-    "homepage": "https://abhi1440.github.io/RateMyMovieApp",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "gh-pages": "^6.3.0"
     },
-
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "dependencies": {
-        "@reduxjs/toolkit": "^2.8.2",
-        "@vitejs/plugin-react": "^4.4.1",
-        "axios": "^1.9.0",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "react-icons": "^5.5.0",
-        "react-redux": "^9.2.0",
-        "react-router-dom": "^7.6.0",
-        "react-slick": "^0.30.3",
-        "react-toastify": "^11.0.5",
-        "slick-carousel": "^1.8.1",
-        "vite": "^6.3.5"
-    },
-    "devDependencies": {
-        "gh-pages": "^6.0.0"
->>>>>>> a12b1b2f13786399be60e64d28bca8c41c5920bd
+    "engines": {
+        "node": ">=18.0.0"
     }
 }
