@@ -1,0 +1,35 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "homepage": "https://abhi1440.github.io/RateMyMovieApp",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.8.2",
+        "@vitejs/plugin-react": "^4.4.1",
+        "axios": "^1.9.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.5.0",
+        "react-redux": "^9.2.0",
+        "react-router-dom": "^7.6.0",
+        "react-slick": "^0.30.3",
+        "react-toastify": "^11.0.5",
+        "slick-carousel": "^1.8.1",
+        "vite": "^6.3.5"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.0.0"
+    }
+}
